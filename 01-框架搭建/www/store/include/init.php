@@ -9,7 +9,7 @@ file init.php
 // 换成正斜线是因为 win/linux都支持正斜线，而linux不支持反斜线  
 // __ROOT__ :  /Applications/MAMP/htdocs/www/1119/
 define('__ROOT__', str_replace('\\', '/', dirname(dirname(__FILE__))) . '/');
-// echo __ROOT__;exit;
+// echo __ROOT__ . '<br />';
 
 define('DEBUG', true);
 
