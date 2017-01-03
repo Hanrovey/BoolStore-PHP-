@@ -12,6 +12,9 @@ define('__ROOT__', str_replace('\\', '/', dirname(dirname(__FILE__))) . '/');
 
 define('DEBUG', true);
 
+// 设置时区，默认是格林尼治时间，修改为
+date_default_timezone_set("PRC");
+
 // 初始化 导入相应的类
 require(__ROOT__ . 'include/conf.class.php');
 require(__ROOT__ . 'include/db.class.php');

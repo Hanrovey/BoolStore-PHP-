@@ -14,7 +14,7 @@ file  log.class.php
 
 class Log{
 
-	const LOGFILE = 'curr.log';// 创建一个常量，代表日志文件的名称
+	const LOGFILE = 'firstLog.txt';// 创建一个常量，代表日志文件的名称
 
 	// 写日志
 	public static function write($cont){
@@ -33,29 +33,19 @@ class Log{
 
 	// 备份日志
 	public static function Bak(){
+
 		// 就是把原来的日志文件，改个名，存储起来
 		// 改成 年-月-日.bak这种形式
 		$log = __ROOT__ . 'data/log/' . self::LOGFILE;
-        $bak = __ROOT__ . 'data/log/' . date('ymd') . mt_rand(10000,99999) . '.bak';
+        $bak = __ROOT__ . 'data/log/' . date('Ymd_His') . '_' .mt_rand(10000,99999) . '_bak.txt';
 
-		// echo $log . '<br />';
-		// echo $bak . '<br />';
-
-		// if (rename($log,$bak)) {
-		// 	echo "换名成功 <br />";
-		// }else{
-		// 	echo "换名失败 <br />";
-		// }
-
-		// Mac电脑，这边换名称不能用，路径是正确的，不知道是不是权限问题还是版本问题。
 		return rename($log, $bak);
-
 	}
 
 
 	// 读取并判断日志大小
 	public static function isBak(){
-		$log = __ROOT__ . 'data/log/ ' . self::LOGFILE;
+		$log = __ROOT__ . 'data/log/' . self::LOGFILE;
 
 		if (!file_exists($log)) {// 如果不存在，则创建该文件
 			touch($log);// touch在linux也有此命令，是快速的建立一个文件
