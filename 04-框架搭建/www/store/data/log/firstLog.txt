@@ -1,0 +1,1 @@
+use boolstoreDBset names utf8insert into test(t1,t2) values('test1','test2')
