@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户表</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>数据库t1</td><td>数据库t2</td>
+		</tr>
+
+		// 引用php代码
+		<?php foreach($list as $value){ ?>
+		<tr>
+			<td><?php echo $value['t1']; ?></td>
+			<td><?php echo $value['t2']; ?></td>
+		</tr>
+		<?php } ?>
+
+	</table>
+</body>
+</html>
