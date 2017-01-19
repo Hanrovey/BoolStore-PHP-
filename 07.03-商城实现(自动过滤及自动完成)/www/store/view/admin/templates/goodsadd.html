@@ -59,7 +59,18 @@ function charea(a) {
           </tr>
           <tr>
             <td class="label">商品分类：</td>
-            <td><select name="category_id"  ><option value="0">请选择...</option><option value="6" >手机配件</option><option value="11" >&nbsp;&nbsp;&nbsp;&nbsp;读卡器和内存卡</option><option value="7" >&nbsp;&nbsp;&nbsp;&nbsp;充电器</option><option value="8" >&nbsp;&nbsp;&nbsp;&nbsp;耳机</option><option value="9" >&nbsp;&nbsp;&nbsp;&nbsp;电池</option><option value="1" >手机类型</option><option value="3" >&nbsp;&nbsp;&nbsp;&nbsp;GSM手机</option><option value="4" >&nbsp;&nbsp;&nbsp;&nbsp;3G手机</option><option value="5" >&nbsp;&nbsp;&nbsp;&nbsp;双模手机</option><option value="2" >&nbsp;&nbsp;&nbsp;&nbsp;CDMA手机</option><option value="12" >充值卡</option><option value="14" >&nbsp;&nbsp;&nbsp;&nbsp;移动手机充值卡</option><option value="15" >&nbsp;&nbsp;&nbsp;&nbsp;联通手机充值卡</option><option value="13" >&nbsp;&nbsp;&nbsp;&nbsp;小灵通/固话充值卡</option></select>
+            <td>
+            <select name="category_id"  >
+            <option value="0">请选择...</option>
+            
+            <?php foreach($categorylist as $v) { ?>
+            <option value="<?php echo $v['category_id']; ?>">
+            <?php echo str_repeat('&nbsp;&nbsp;',$v['lev']),$v['category_name']; ?>
+              
+            </option>
+            <?php } ?>
+            
+            </select>
              </td>
           </tr>
                    <tr>
