@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="ECSHOP v2.7.2" name="Generator">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="" name="Keywords">
+<meta content="" name="Description">
+
+<title>购物流程_中意斯正装商城-职业装|面试正装|求职正装|男士正装|女士正装|正装衬衫-源于北京,服务全国</title>
+
+<link href="favicon.ico" rel="shortcut icon">
+<link type="image/gif" href="animated_favicon.gif" rel="icon">
+<link type="text/css" rel="stylesheet" href="./view/front/css/style.css">
+</head>
+
+<body>
+
+
+
+<!-- 包含头部 -->
+<?php include(__ROOT__ . 'view/front/header.html'); ?>
+
+<div class="blank"></div>
+
+
+
+
+<div class="block">  
+当前位置: <a href=".">首页</a> <code>&gt;</code> 购物流程 <div class="blank"></div>
+  
+
+        
+                <form onsubmit="return checkConsignee(this)" id="theForm" name="theForm" method="post" action="flow.php">
+        <div class="flowBox">
+<h6><span>收货人信息</span></h6>
+<table width="100%" cellspacing="1" cellpadding="5" border="0" bgcolor="#dddddd" align="center">
+    
+  <tbody><tr>
+    <td bgcolor="#ffffff">配送区域:</td>
+    <td bgcolor="#ffffff" colspan="3">
+    <select style="border:1px solid #ccc;" onchange="region.changed(this, 1, 'selProvinces_0')" id="selCountries_0" name="country">
+        <option value="0">请选择国家</option>
+                <option selected="" value="1">中国</option>
+              </select>
+      <select style="border:1px solid #ccc;" onchange="region.changed(this, 2, 'selCities_0')" id="selProvinces_0" name="province">
+        <option value="0">请选择省</option>
+                <option value="2">北京</option>
+                <option value="3">安徽</option>
+                <option value="4">福建</option>
+                <option value="5">甘肃</option>
+                <option value="6">广东</option>
+                <option value="7">广西</option>
+                <option value="8">贵州</option>
+                <option value="9">海南</option>
+                <option value="10">河北</option>
+                <option value="11">河南</option>
+                <option value="12">黑龙江</option>
+                <option value="13">湖北</option>
+                <option value="14">湖南</option>
+                <option value="15">吉林</option>
+                <option value="16">江苏</option>
+                <option value="17">江西</option>
+                <option value="18">辽宁</option>
+                <option value="19">内蒙古</option>
+                <option value="20">宁夏</option>
+                <option value="21">青海</option>
+                <option value="22">山东</option>
+                <option value="23">山西</option>
+                <option value="24">陕西</option>
+                <option value="25">上海</option>
+                <option value="26">四川</option>
+                <option value="27">天津</option>
+                <option value="28">西藏</option>
+                <option value="29">新疆</option>
+                <option value="30">云南</option>
+                <option value="31">浙江</option>
+                <option value="32">重庆</option>
+                <option value="33">香港</option>
+                <option value="34">澳门</option>
+                <option value="35">台湾</option>
+              </select>
+      <select style="border:1px solid #ccc;" onchange="region.changed(this, 3, 'selDistricts_0')" id="selCities_0" name="city">
+        <option value="0">请选择市</option>
+              </select>
+      <select style="display:none" id="selDistricts_0" name="district">
+        <option value="0">请选择区</option>
+              </select>
+    (必填) </td>
+  </tr>
+    <tr>
+    <td bgcolor="#ffffff">收货人姓名:</td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="consignee_0" class="inputBg" name="consignee">
+    (必填) </td>
+    <td bgcolor="#ffffff">电子邮件地址:</td>
+    <td bgcolor="#ffffff"><input type="text" value="maildocgaojingru@163.com" id="email_0" class="inputBg" name="email">
+    (必填)</td>
+  </tr>
+    
+  <tr>
+    <td bgcolor="#ffffff">详细地址:</td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="address_0" class="inputBg" name="address">
+    (必填)</td>
+    <td bgcolor="#ffffff">邮政编码:</td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="zipcode_0" class="inputBg" name="zipcode"></td>
+  </tr>
+    <tr>
+    <td bgcolor="#ffffff">电话:</td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="tel_0" class="inputBg" name="tel">
+    (必填)</td>
+    <td bgcolor="#ffffff">手机:</td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="mobile_0" class="inputBg" name="mobile"></td>
+  </tr>
+    
+  <tr>
+    <td bgcolor="#ffffff">标志建筑:</td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="sign_building_0" class="inputBg" name="sign_building"></td>
+    <td bgcolor="#ffffff">最佳送货时间:</td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="best_time_0" class="inputBg" name="best_time"></td>
+  </tr>
+    <tr>
+    <td bgcolor="#ffffff" align="center" colspan="4">
+    <input type="submit" value="配送至这个地址" class="bnt_blue_2" name="Submit">
+            <input type="hidden" value="consignee" name="step">
+      <input type="hidden" value="checkout" name="act">
+      <input type="hidden" value="" name="address_id">
+      </td>
+  </tr>
+</tbody></table>
+</div>        </form>
+                
+        
+                
+
+
+
+</div>
+<div class="blank"></div>
+<div style="text-align:center"></div>
+
+<div class="page_footer block">
+	<div class="foot_nav">
+    	<div class="block">
+             	<div class="nav_list">
+
+
+                        <a href="article.php?id=2" style="padding:0 3px 0 5px">隐私保护</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=5" style="padding:0 3px 0 5px">公司简介</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=4" style="padding:0 3px 0 5px">联系我们</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=3" style="padding:0 3px 0 5px">在线客服</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=1" style="padding:0 3px 0 5px">加盟政策</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=57" style="padding:0 3px 0 5px">团购优惠</a>  
+            
+            
+                          |
+                                    <a href="myship.php" style="padding:0 3px 0 5px">配送方式</a>  
+            
+            
+                         
+
+
+</div></div></div></div></body></html>
