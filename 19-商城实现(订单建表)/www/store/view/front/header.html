@@ -1,0 +1,119 @@
+<div style="position:relative;z-index:999999" class="block">
+	<div class="page_header clearfix">
+    	<div style="height:85px; " class="block">
+    	<div class="logo f_l"><a href="#"><img src="./view/front/images/logo.gif"></a></div>
+        <div class="member_login f_l">
+        <font id="ECS_MEMBERZONE"><div id="append_parent"></div>
+ <?php
+ if(isset($_SESSION['username']) && !empty($_SESSION['username'])) { ?>
+
+你好，<font class="f_orange_bold"><?php echo $_SESSION['username']; ?></font>,欢迎你回来
+<a href="0">用户中心</a>
+<a href="logout.php">退出</a>
+
+ <?php } else { ?>
+
+ 欢迎光临中意斯！&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="login.php">登录</a> | <a href="#">注册</a>
+
+ <?php } ?>
+ </font>            
+            </div>
+        <div class="page_top f_r">
+        
+                     <a href="#">诚聘代理</a>
+                         |
+                            <a href="#">查看购物车</a>
+                         |
+                            <a href="#">会员中心</a>
+                         |
+                            <a href="#">优惠活动</a>
+                   	
+            <div class="telinfo">
+			<div><a href="#">
+ <img border="0" alt="中意斯QQ客服" src="http://wpa.qq.com/pa?p=2:247134821:41"></a></div>
+ </div>
+            
+            
+            
+        </div>
+        </div>
+    </div>
+    
+    <div id="mid_nav" class="mid_nav clearfix">
+    	<div class="block">
+    	<div class="nav_list f_l">
+        	<ul>
+            	<li><a class="curr" href="index.php">首页</a></li>
+              <li><a href="category.php?category_id=1">男士正装</a></li>
+              <li><a href="category.php?category_id=4">女士正装</a></li>
+              <li><a href="category.php?category_id=7">正装鞋</a></li>
+              <li><a href="#">正装租赁</a></li>
+              <li><a href="category.php?category_id=10">配饰</a></li>
+              <li><a href="#">实体店面</a></li>
+              <li><a href="#">断码特惠</a></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="block">
+<div style="width:822px; overflow:hidden" class="f_l">
+<div class="hot_cate clearfix">
+<div class="f_l"><span class="f_gray_white">热门分类：</span>&nbsp;&nbsp;
+&nbsp;<a href="#">西装</a>&nbsp;&nbsp;<a href="#">型男系列</a>&nbsp;&nbsp;<a href="#">衬衫</a>&nbsp;&nbsp;<a href="#">休闲衬衫</a>&nbsp;&nbsp;<a href="#">领带</a>&nbsp;
+                     
+  <span><b>特别关注:</b> <a target="_blank" href="article.php?id=37">清华店</a> 
+<a target="_blank" href="article.php?id=37">五道口店</a> 
+<a target="_blank" href="article.php?id=37">人大店</a> 
+<a target="_blank" href="article.php?id=37">北邮店</a> 
+<a target="_blank" href="article.php?id=37">北航店</a>   
+<a target="_blank" href="article.php?id=37">农大店</a> 
+<a target="_blank" href="article.php?id=37">西安店</a>
+<a target="_blank" href="article.php?id=37">南京店</a>
+<a target="_blank" href="article.php?id=37">更多…</a></span>
+                     
+                     
+</div>
+</div>
+<div class="block clearfix brand_list">
+  <div class="search_box f_l">
+        <form onsubmit="return checkSearchForm()" action="search.php" method="get" name="searchForm" id="searchForm">
+        <select style="vertical-align:middle" class="txt_style_1" id="category" name="category">
+      <option value="0">所有分类</option>
+          <option value="103">待加分类2</option><option value="148">配饰</option><option value="36">&nbsp;&nbsp;&nbsp;&nbsp;领带</option><option value="147">&nbsp;&nbsp;&nbsp;&nbsp;皮带</option><option value="42">女士正装</option><option value="135">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="136">&nbsp;&nbsp;&nbsp;&nbsp;其它</option><option value="134">&nbsp;&nbsp;&nbsp;&nbsp;套装</option><option value="149">断码特惠</option><option value="66">正装租赁</option><option value="17">男士正装</option><option value="18">&nbsp;&nbsp;&nbsp;&nbsp;西装</option><option value="25">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="83">正装鞋</option><option value="84">&nbsp;&nbsp;&nbsp;&nbsp;男士皮鞋</option><option value="89">&nbsp;&nbsp;&nbsp;&nbsp;女士皮鞋</option><option value="154">商务大衣</option><option value="128">其它</option>        </select>
+        	<input type="text" style="vertical-align:middle; width:120px;" class="txt_style_search" value="" id="keyword" name="keywords"> <input type="submit" style="vertical-align:middle" value="搜索" class="btn_style_3"> &nbsp;
+            
+            
+      
+            </form>
+        </div>
+ <div style=" padding-top:0px; padding-right:5px; overflow:hidden" class="hot_keyword f_l">热门关键字：
+	
+      <a href="#">正装</a>
+      <a href="#">ZYS650</a>
+      <a href="#">套裙</a>
+      <a href="#">套裤</a>
+      <a href="#">158-5</a>
+      <a href="#">衬衫</a>
+      <a href="#">纯白</a>
+      <a href="#">V领</a>
+      <a href="#">皮鞋</a>
+      <a href="#">正装鞋</a>
+      <a href="#">领带</a>
+      <a href="#">条纹</a>
+    </div>
+  
+</div>
+</div>
+<div style="position:relative" class="cart_tip f_r">
+<img src="./view/front/images/car.gif">
+<a title="查看购物车" href="flow.php">购物车中有 <b>0</b> 件商品 合计 <b>￥0.00元</b></a>
+<a style="position:absolute; top:30px; right:0px;" href="flow.php"><img src="./view/front/images/jiesuan.gif"></a>
+</div>
+</div>
+<div class="blank"></div>
+<div class="block">
+<div id="adSmall">
+</div>
+</div>
