@@ -1,5 +1,5 @@
 # BoolStore-PHP-
-`PHP实战(php+mysql)-->服装商城实战项目`<br/>
+##`PHP实战(php+mysql)-->服装商城实战项目`<br/>
 包含功能<br>
 1.MVC架构<br>
 2.session && cookie<br>
