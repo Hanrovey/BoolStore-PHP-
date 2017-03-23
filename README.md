@@ -1,8 +1,8 @@
 # BoolStore-PHP-
 PHP学习-服装商城实战项目<br/>
-  包含功能
-  1.MVC架构
-#2.session && cookie
+  包含功能<br>
+  1.MVC架构<br>
+#2.session && cookie<br>
 #3.自动加载和防非法访问
 #4.后台管理平台(栏目管理，商品管理)
 #5.参数自动过滤
