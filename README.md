@@ -1,9 +1,9 @@
 # BoolStore-PHP-
-##PHP实战(php+mysql)-->服装商城实战项目<br/><br/><br/><br/>
-包含功能<br>
-1.MVC架构<br>
-2.session && cookie<br>
-3.自动加载和防非法访问
+PHP实战(php+mysql)-->服装商城实战项目<br/><br/><br/><br/>
+包含功能:<br>
+<br>1.MVC架构
+<br>2.session && cookie
+<br>3.自动加载和防非法访问
 <br>4.后台管理平台(栏目管理，商品管理)
 <br>5.参数自动过滤
 <br>6.编写文件上传类
