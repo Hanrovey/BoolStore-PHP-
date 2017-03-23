@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="ECSHOP v2.7.2" name="Generator">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="" name="Keywords">
+<meta content="" name="Description">
+
+<title>购物流程_中意斯正装商城-职业装|面试正装|求职正装|男士正装|女士正装|正装衬衫-源于北京,服务全国</title>
+
+<link href="favicon.ico" rel="shortcut icon">
+<link type="image/gif" href="animated_favicon.gif" rel="icon">
+<link type="text/css" rel="stylesheet" href="./view/front/css/style.css">
+
+</head>
+
+<body>
+
+
+
+<!-- 包含头部 -->
+<?php include(__ROOT__ . 'view/front/header.html'); ?>
+
+<div class="blank"></div>
+
+
+
+<div class="block">  
+当前位置: <a href=".">首页</a> <code>&gt;</code> 购物流程 <div class="blank"></div>  
+  
+  
+
+        
+        
+                
+        <div style="margin:30px auto 70px auto;" class="flowBox">
+         <h6 style="text-align:center; height:30px; line-height:30px; font-size:14px; background:#fff; color:#333333; font-weight:bold">感谢选购中意斯正装！您的订单已提交成功，请记住您的订单号: <font style="color:red"><?php echo $order_sn;?></font></h6>
+          <table width="100%" cellspacing="0" cellpadding="15" border="0" bgcolor="#fff" align="center" style="border:1px solid #ddd; margin:20px auto;">
+            <tbody><tr>
+              <td bgcolor="#FFFFFF" align="center">
+              您选定的配送方式为: <strong>到实体店试穿取货</strong>，您选定的支付方式为: <strong>网上支付</strong>。您的应付款金额为: <strong>￥999.00元</strong>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#FFFFFF" align="center">通过支付宝进行支付，无支付宝帐号的客户也可以用银行卡进行在线支付（前提是银行卡已经开通网上支付功能）。</td>
+            </tr>
+                        
+            <tr>
+              <td bgcolor="#FFFFFF" align="center">
+                <div style="text-align:center">
+              
+              <form action="http://127.0.0.1:8888/www/pay/index.php" method="post">
+                  商户编号<input type="text" name="v_mid" value="1009001" /><br />
+                  订单编号<input type="text" name="v_oid" value="<?php echo $order_sn;?>"><br />
+                  订单总金额<input type="text" name="v_amount" value="<?php echo $total;?>"><br />
+                  币种<input type="text" name="v_moneytype" value="CNY"><br />
+                  回调地址<input type="text" name="v_url" value="<?php echo $v_url;?>"><br />
+                  <input type=hidden name="v_md5info" value="<?php echo $v_md5info;?>"> 
+                  <input type="submit" value="立即在线支付">
+              </form>
+
+              </div>
+            </td>
+            </tr>
+                      </tbody></table>
+                    <p style="text-align:center; margin-bottom:20px;">您可以 <a href="index.php">返回首页</a> 或去 <a href="user.php">用户中心</a></p>
+        </div>
+                
+
+
+
+</div>
+<div class="blank"></div>
+<div style="text-align:center"></div>
+
+<div class="page_footer block">
+	<div class="foot_nav">
+    	<div class="block">
+             	<div class="nav_list">
+
+
+                        <a href="article.php?id=2" style="padding:0 3px 0 5px">隐私保护</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=5" style="padding:0 3px 0 5px">公司简介</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=4" style="padding:0 3px 0 5px">联系我们</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=3" style="padding:0 3px 0 5px">在线客服</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=1" style="padding:0 3px 0 5px">加盟政策</a>  
+            
+            
+                          |
+                                    <a href="article.php?id=57" style="padding:0 3px 0 5px">团购优惠</a>  
+            
+            
+                          |
+                                    <a href="myship.php" style="padding:0 3px 0 5px">配送方式</a>  
+            
+            
+                         
+
+
+</div></div></div></div></body></html>
